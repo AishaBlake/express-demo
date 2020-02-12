@@ -8,9 +8,7 @@ students.get("/", (req, res) => {
 });
 
 students.post("/", (req, res) => {
-  studentList.push(req.body)
-  console.log(req)
-  res.json(studentList);
+  res.json("Adding a student...");
 });
 
 students.get("/:id", (req, res) => {
